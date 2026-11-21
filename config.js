@@ -11,5 +11,5 @@
 //      web page on another domain cannot download (CORS).
 // The Worker does both server-side and exposes a CORS-enabled endpoint.
 window.TCDD_CONFIG = {
-    proxyUrl: ""
+    proxyUrl: "https://yht.onur-ydk.workers.dev/"
 };
