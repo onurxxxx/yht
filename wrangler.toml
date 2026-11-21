@@ -1,0 +1,7 @@
+name = "tcdd-proxy"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Optional: only allow your own site to call the proxy.
+# [vars]
+# ALLOWED_ORIGIN = "https://your-name.github.io"

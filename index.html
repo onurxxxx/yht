@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TCDD Train Seat Finder</title>
+</head>
+<body>
+    <h1>TCDD Train Seat Finder</h1>
+    <form id="configForm" onsubmit="return false;">
+        <div id="status" class="status hidden"></div>
+        <div>
+            <label for="binisIstasyonAdi">Departure Station:</label>
+            <select id="binisIstasyonAdi"></select>
+        </div>
+        <div>
+            <label for="inisIstasyonAdi">Arrival Station:</label>
+            <select id="inisIstasyonAdi"></select>
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+        </div>
+        <div id="hourContainer">
+            <label for="hour">Select Suitable Hours:</label>
+            <div id="hourChoices"></div>
+        </div>
+        <div>
+            <label>Notify me for these cabin classes:</label>
+            <div id="classChoices">
+                <div><input type="checkbox" id="class-Y1" value="Y1" checked><label for="class-Y1">Economy</label></div>
+                <div><input type="checkbox" id="class-C" value="C" checked><label for="class-C">Business</label></div>
+                <div><input type="checkbox" id="class-L" value="L" checked><label for="class-L">Loca</label></div>
+                <div><input type="checkbox" id="class-DSB" value="DSB"><label for="class-DSB">Wheelchair space</label></div>
+            </div>
+        </div>
+        <div>
+            <label for="sleepTime">Check every (seconds, minimum 30):</label>
+            <input type="number" id="sleepTime" value="60" min="30" step="5">
+        </div>
+        <button type="button" id="find-seat-button">Find Seat</button>
+        <div id="log"></div>
+        <div id="result"></div>
+    </form>
+    <div id="sfcwg3fhmlubgx2mljwfde3guqmn8cx4bu6"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=wg3fhmlubgx2mljwfde3guqmn8cx4bu6&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="visitor counter widget"><img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=wg3fhmlubgx2mljwfde3guqmn8cx4bu6" title="visitor counter widget" alt="visitor counter widget"></a></noscript>
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
